@@ -25,7 +25,7 @@ export default defineComponent({
     MainProcess.onEvent('MAIN->OVERLAY::overlay-attached', () => {
       if (!show.value) {
         show.value = true
-        setTimeout(() => { show.value = false }, 2500)
+        setTimeout(() => { show.value = false }, 0)
       }
     })
 
